@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Haven Hotel — Where Luxury Meets Comfort</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/233501234567" class="whatsapp-float" target="_blank" aria-label="WhatsApp">💬</a>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Haven<span> Hotel</span></div>
+  <ul class="nav-links">
+    <li><a href="#rooms">Rooms</a></li>
+    <li><a href="#amenities">Amenities</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#booking">Contact</a></li>
+  </ul>
+  <a href="#booking" class="nav-cta">Book Now</a>
+  <button class="hamburger" onclick="toggleMobile()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#rooms" onclick="toggleMobile()">Rooms</a>
+  <a href="#amenities" onclick="toggleMobile()">Amenities</a>
+  <a href="#testimonials" onclick="toggleMobile()">Reviews</a>
+  <a href="#booking" onclick="toggleMobile()">Book Now</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <div class="hero-eyebrow reveal">Accra, Ghana · Est. 2018</div>
+      <h1 class="hero-h1 reveal">Rest Well.<br>Live <em>Better.</em></h1>
+      <p class="hero-sub reveal">A sanctuary of comfort in the heart of Accra. Thoughtfully designed rooms, attentive service, and everything you need to feel at home — or better.</p>
+      <div class="hero-btns reveal">
+        <a href="#booking" class="btn-accent">Book Your Stay</a>
+        <a href="#rooms" class="btn-ghost">Explore Rooms</a>
+      </div>
+    </div>
+    <div class="hero-right reveal reveal-d2">
+      <div class="hero-card">
+        <div class="hero-card-label">Why guests love us</div>
+        <h3>Award-Winning Hospitality</h3>
+        <p>Recognised as Accra's top-rated boutique hotel for three consecutive years. Your comfort is our only metric.</p>
+      </div>
+      <div class="hero-stats">
+        <div><div class="stat-num">98%</div><div class="stat-label">Guest satisfaction</div></div>
+        <div><div class="stat-num">500+</div><div class="stat-label">5-star reviews</div></div>
+        <div><div class="stat-num">6yr</div><div class="stat-label">In business</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="strip">
+  <div class="strip-inner">
+    <span class="strip-item">Free WiFi</span><span class="strip-dot">◆</span>
+    <span class="strip-item">Airport Transfer</span><span class="strip-dot">◆</span>
+    <span class="strip-item">Rooftop Pool</span><span class="strip-dot">◆</span>
+    <span class="strip-item">Restaurant &amp; Bar</span><span class="strip-dot">◆</span>
+    <span class="strip-item">24hr Concierge</span><span class="strip-dot">◆</span>
+    <span class="strip-item">Spa &amp; Wellness</span><span class="strip-dot">◆</span>
+    <span class="strip-item">Event Spaces</span><span class="strip-dot">◆</span>
+    <span class="strip-item">Free WiFi</span><span class="strip-dot">◆</span>
+    <span class="strip-item">Airport Transfer</span><span class="strip-dot">◆</span>
+    <span class="strip-item">Rooftop Pool</span><span class="strip-dot">◆</span>
+    <span class="strip-item">Restaurant &amp; Bar</span><span class="strip-dot">◆</span>
+    <span class="strip-item">24hr Concierge</span><span class="strip-dot">◆</span>
+    <span class="strip-item">Spa &amp; Wellness</span><span class="strip-dot">◆</span>
+    <span class="strip-item">Event Spaces</span><span class="strip-dot">◆</span>
+  </div>
+</div>
+
+<!-- SLIDESHOW -->
+<section id="slideshow">
+  <div class="slides-wrapper">
+    <div class="slide active">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-tag">Featured Space</span>
+        <h2 class="slide-title">The Rooftop<br>Pool &amp; Bar</h2>
+        <p class="slide-desc">360° views of Accra's skyline. Swim at sunrise, sip cocktails at dusk. Open to all guests daily from 7am.</p>
+        <a href="#booking" class="slide-cta">Reserve your stay →</a>
+      </div>
+      <div class="slide-image"><img src="images/pool2.jpg" alt="Rooftop Pool"></div>
+    </div>
+    <div class="slide">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-tag">Suite Experience</span>
+        <h2 class="slide-title">Presidential<br>Suite</h2>
+        <p class="slide-desc">1,200 sq ft of curated luxury. Private terrace, butler service, and a king bed that sleeps like a cloud.</p>
+        <a href="#rooms" class="slide-cta">View all rooms →</a>
+      </div>
+      <div class="slide-image"><img src="images/presedential.jpg" alt="Presidential Suite"></div>
+    </div>
+    <div class="slide">
+      <div class="slide-overlay"></div>
+      <div class="slide-content">
+        <span class="slide-tag">Dining</span>
+        <h2 class="slide-title">Harbour<br>Restaurant</h2>
+        <p class="slide-desc">Modern Ghanaian cuisine with international flair. Breakfast, lunch, and dinner served daily on-site.</p>
+        <a href="#amenities" class="slide-cta">Explore amenities →</a>
+      </div>
+      <div class="slide-image"><img src="images/restaurant.jpg" alt="Harbour Restaurant"></div>
+    </div>
+    <button class="slide-arrow slide-prev" onclick="changeSlide(-1)" aria-label="Previous">&#8592;</button>
+    <button class="slide-arrow slide-next" onclick="changeSlide(1)" aria-label="Next">&#8594;</button>
+    <div class="slide-dots">
+      <button class="dot active" onclick="goToSlide(0)"></button>
+      <button class="dot" onclick="goToSlide(1)"></button>
+      <button class="dot" onclick="goToSlide(2)"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ROOMS -->
+<section id="rooms">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-eyebrow">Accommodation</div>
+      <h2 class="section-title">Our Rooms</h2>
+    </div>
+    <p class="section-note">Every room is a retreat. Clean lines, quality linens, and thoughtful detail throughout.</p>
+  </div>
+  <div class="rooms-grid">
+
+    <!-- Card 1 -->
+    <div class="room-card reveal reveal-d1">
+      <div class="room-img">
+        <div class="room-img-bg">
+          <img src="Images/standard.jpg" alt="Standard Room" onerror="this.style.display='none'">
+        </div>
+        <div class="room-badge" style="background:var(--accent);color:var(--dark)">Available</div>
+      </div>
+      <div class="room-body">
+        <div class="room-name">Standard Room</div>
+        <div class="room-desc">A comfortable, well-appointed room with everything you need for a great night's rest. Perfect for solo travellers and short stays.</div>
+        <div class="room-features">
+          <span class="room-feat">King Bed</span>
+          <span class="room-feat">Free WiFi</span>
+          <span class="room-feat">Air Con</span>
+          <span class="room-feat">Ensuite</span>
+        </div>
+        <div class="room-footer">
+          <div class="room-price">GH₵ 350 <span>/ night</span></div>
+          <a href="#booking" class="room-btn">Book Room</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="room-card reveal reveal-d2">
+      <div class="room-img">
+        <div class="room-img-bg">
+          <img src="Images/deluxe.jpg" alt="Deluxe Room" onerror="this.style.display='none'">
+        </div>
+        <div class="room-badge" style="background:var(--primary);color:var(--accent)">Popular</div>
+      </div>
+      <div class="room-body">
+        <div class="room-name">Deluxe Room</div>
+        <div class="room-desc">More space, more light, more comfort. City views, premium bedding, and a dedicated work desk for longer stays.</div>
+        <div class="room-features">
+          <span class="room-feat">King Bed</span>
+          <span class="room-feat">City View</span>
+          <span class="room-feat">Bathtub</span>
+          <span class="room-feat">Mini Bar</span>
+        </div>
+        <div class="room-footer">
+          <div class="room-price">GH₵ 550 <span>/ night</span></div>
+          <a href="#booking" class="room-btn">Book Room</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="room-card reveal reveal-d3">
+      <div class="room-img">
+        <div class="room-img-bg">
+          <img src="Images/presidential2.jpg" alt="Presidential Suite" onerror="this.style.display='none'">
+        </div>
+        <div class="room-badge" style="background:var(--accent);color:var(--dark)">Suite</div>
+      </div>
+      <div class="room-body">
+        <div class="room-name">Presidential Suite</div>
+        <div class="room-desc">The pinnacle of our offering. Private terrace, butler on call, separate living area, and 180° skyline views.</div>
+        <div class="room-features">
+          <span class="room-feat">Private Terrace</span>
+          <span class="room-feat">Butler</span>
+          <span class="room-feat">Jacuzzi</span>
+          <span class="room-feat">Living Room</span>
+        </div>
+        <div class="room-footer">
+          <div class="room-price">GH₵ 1,200 <span>/ night</span></div>
+          <a href="#booking" class="room-btn">Book Suite</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- AMENITIES -->
+<section id="amenities">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-eyebrow">What's Included</div>
+      <h2 class="section-title">Amenities</h2>
+    </div>
+    <p class="section-note">Everything you need. Nothing you don't.</p>
+  </div>
+  <div class="amenities-grid">
+    <div class="amenity-card reveal reveal-d1"><div class="amenity-icon">🏊</div><div class="amenity-name">Rooftop Pool</div><div class="amenity-desc">Open daily 7am–10pm. Panoramic Accra skyline views, sun loungers included for all guests.</div></div>
+    <div class="amenity-card reveal reveal-d2"><div class="amenity-icon">🍽️</div><div class="amenity-name">Restaurant &amp; Bar</div><div class="amenity-desc">Modern Ghanaian cuisine and international dishes. Breakfast included with every booking.</div></div>
+    <div class="amenity-card reveal reveal-d3"><div class="amenity-icon">💆</div><div class="amenity-name">Spa &amp; Wellness</div><div class="amenity-desc">Full-service spa with massages, facials, and a fully-equipped fitness centre. Book ahead.</div></div>
+    <div class="amenity-card reveal"><div class="amenity-icon">🚗</div><div class="amenity-name">Airport Transfer</div><div class="amenity-desc">Complimentary pickup and drop-off from Kotoka International Airport for all staying guests.</div></div>
+    <div class="amenity-card reveal reveal-d1"><div class="amenity-icon">📶</div><div class="amenity-name">High-Speed WiFi</div><div class="amenity-desc">300Mbps fibre throughout the property. Business centre available 24/7 for remote workers.</div></div>
+    <div class="amenity-card reveal reveal-d2"><div class="amenity-icon">🎉</div><div class="amenity-name">Event Spaces</div><div class="amenity-desc">Three private rooms for conferences, weddings, and celebrations. In-house catering available.</div></div>
+    <div class="amenity-card reveal reveal-d3"><div class="amenity-icon">🔒</div><div class="amenity-name">24hr Security</div><div class="amenity-desc">CCTV, in-room safes, and a dedicated security team so you rest without worry.</div></div>
+    <div class="amenity-card reveal"><div class="amenity-icon">🛎️</div><div class="amenity-name">24hr Concierge</div><div class="amenity-desc">Always on hand — tours, reservations, recommendations, transport. Whatever you need.</div></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-header reveal">
+    <div>
+      <div class="section-eyebrow">Guest Reviews</div>
+      <h2 class="section-title">What They Say</h2>
+    </div>
+    <p class="section-note">Real guests. Real stays. No filters.</p>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testi-card reveal reveal-d1">
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-quote">"</div>
+      <p class="testi-text">Absolutely stunning hotel. The Presidential Suite was worth every pesewa — the view from the terrace at sunrise is something I'll never forget. Staff remembered my name every single day.</p>
+      <div class="testi-author"><div class="testi-avatar">AK</div><div><div class="testi-name">Akosua K.</div><div class="testi-origin">Kumasi, Ghana</div></div></div>
+    </div>
+    <div class="testi-card reveal reveal-d2">
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-quote">"</div>
+      <p class="testi-text">I travel for work every month and this is now my only choice in Accra. Fast WiFi, incredible breakfast, and the airport transfer saved me so much stress. Consistent excellence.</p>
+      <div class="testi-author"><div class="testi-avatar">JM</div><div><div class="testi-name">James M.</div><div class="testi-origin">Lagos, Nigeria</div></div></div>
+    </div>
+    <div class="testi-card reveal reveal-d3">
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-quote">"</div>
+      <p class="testi-text">We celebrated our anniversary in the Deluxe Room and Haven Hotel made it genuinely special. Flowers on arrival, handwritten note, and the spa session was divine. We will be back.</p>
+      <div class="testi-author"><div class="testi-avatar">SA</div><div><div class="testi-name">Sarah &amp; Kofi A.</div><div class="testi-origin">Accra, Ghana</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking">
+  <div class="booking-grid">
+    <div class="booking-left reveal">
+      <div class="section-eyebrow" style="color:var(--accent)">Reservations</div>
+      <h2 class="section-title">Book Your<br>Stay</h2>
+      <p class="booking-tagline">Reserve directly with us for the best rate — no booking fees, no middleman. Confirmation within 2 hours.</p>
+      <div class="booking-details">
+        <div class="b-detail"><div class="b-icon">📍</div><div><div class="b-label">Location</div><div class="b-val">14 Airport Road, Accra, Ghana</div></div></div>
+        <div class="b-detail"><div class="b-icon">📞</div><div><div class="b-label">Phone</div><div class="b-val"><a href="tel:+233501234567">+233 50 123 4567</a></div></div></div>
+        <div class="b-detail"><div class="b-icon">✉️</div><div><div class="b-label">Email</div><div class="b-val"><a href="mailto:hello@havenhotel.com">hello@havenhotel.com</a></div></div></div>
+        <div class="b-detail"><div class="b-icon">🕐</div><div><div class="b-label">Check-in / Check-out</div><div class="b-val">Check-in from 2:00pm · Check-out by 12:00pm</div></div></div>
+      </div>
+      <a href="https://wa.me/233501234567" class="btn-ghost" target="_blank" style="display:inline-flex;align-items:center;gap:.5rem">💬 &nbsp;Chat on WhatsApp</a>
+    </div>
+    <form class="booking-form reveal reveal-d2" onsubmit="handleBook(event)">
+      <div class="form-title">Reserve a Room</div>
+      <div class="form-subtitle">All fields required unless marked optional</div>
+      <div class="form-divider"></div>
+      <div class="form-row">
+        <div class="form-group"><label>First Name</label><input type="text" placeholder="First name" required></div>
+        <div class="form-group"><label>Last Name</label><input type="text" placeholder="Last name" required></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Email</label><input type="email" placeholder="you@example.com" required></div>
+        <div class="form-group"><label>Phone</label><input type="tel" placeholder="+233 50 000 0000" required></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Check-in Date</label><input type="date" required></div>
+        <div class="form-group"><label>Check-out Date</label><input type="date" required></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Room Type</label>
+          <select required>
+            <option value="" disabled selected>Select room</option>
+            <option>Standard Room — GH₵ 350/night</option>
+            <option>Deluxe Room — GH₵ 550/night</option>
+            <option>Presidential Suite — GH₵ 1,200/night</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Guests</label>
+          <select>
+            <option>1 Guest</option><option>2 Guests</option><option>3 Guests</option><option>4 Guests</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group"><label>Special Requests (optional)</label><textarea placeholder="Early check-in, dietary needs, anniversary setup..."></textarea></div>
+      <button type="submit" class="btn-book">Confirm Booking →</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="nav-logo">Haven<span> Hotel</span></div>
+      <p>A sanctuary of comfort in the heart of Accra. Award-winning hospitality since 2018.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <a href="#rooms">Rooms</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#booking">Book Now</a>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#">Airport Transfer</a>
+      <a href="#">Spa &amp; Wellness</a>
+      <a href="#">Event Spaces</a>
+      <a href="#">Restaurant</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="tel:+233501234567">+233 50 123 4567</a>
+      <a href="mailto:hello@havenhotel.com">hello@havenhotel.com</a>
+      <a href="#">14 Airport Road, Accra</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Haven Hotel · Accra, Ghana · All rights reserved</p>
+    <p>Built with care</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
